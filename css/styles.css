@@ -204,7 +204,7 @@ img {
   height: 4px;
   width: 100%;
   background-color: var(--accent-color);
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 /* Адресс INDEX и PORTFOLIO */
@@ -708,13 +708,31 @@ footer > .container {
   background-position: center;
 }
 
-.relative {
+/* Текст поверх картинки в Чем мы занимаемся */
+
+.product-thumb {
   position: relative;
 }
 
 .absolute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  min-width: 100%;
+  min-height: 70px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
   background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.8),
